@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="64dp"
+    tools:context=".FavoriteFragment"
+    android:theme="@style/MyFragmentStyle">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/search_edittext_background"
+        android:layout_margin="16dp">
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:hint="Поиск"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/background"
+            android:layout_marginLeft="44dp"/>
+
+        <ImageView
+            android:id="@+id/iconStart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/emptyImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/free_icon_hearts_1216619_1"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_marginHorizontal="54dp"
+        android:id="@+id/emptyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Список избранного пока пуст"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:textColor="@color/card_background"
+        android:layout_below="@id/emptyImageView"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

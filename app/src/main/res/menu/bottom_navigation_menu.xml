@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/teachingFragment"
+        android:icon="@drawable/free_icon_font_graduation_cap_3914115_1"
+        android:title="Обучение" />
+
+    <item
+        android:id="@+id/libraryFragment"
+        android:icon="@drawable/free_icon_musical_note_8114785_1"
+        android:title="Библиотека" />
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/calendar_star_1"
+        android:title="Главная" />
+
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/free_icon_heart_1077086_1"
+        android:title="Избранное" />
+
+</menu>

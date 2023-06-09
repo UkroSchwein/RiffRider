@@ -1,0 +1,99 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+    android:id="@+id/homeFragment"
+    android:name="com.example.riffrider.HomeFragment"
+    android:label="Главная"
+    tools:layout="@layout/home_layout" >
+        <action
+            android:id="@+id/action_homeFragment_to_NewsongsFragment"
+            app:destination="@id/newsongsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_RecommendedsongsFragment"
+            app:destination="@id/recommendedsongsFragment" />
+    </fragment>
+
+    <fragment
+    android:id="@+id/favoriteFragment"
+    android:name="com.example.riffrider.FavoriteFragment"
+    android:label="Избранное"
+    tools:layout="@layout/favorite_layout" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+    </fragment>
+
+    <fragment
+    android:id="@+id/teachingFragment"
+    android:name="com.example.riffrider.TeachingFragment"
+    android:label="Обучение"
+    tools:layout="@layout/teaching_layout" >
+        <action
+            android:id="@+id/action_teachingFragment_to_lessonsFragment"
+            app:destination="@id/lessonsFragment" />
+    </fragment>
+
+    <fragment
+    android:id="@+id/libraryFragment"
+    android:name="com.example.riffrider.LibraryFragment"
+    android:label="Библиотека"
+    tools:layout="@layout/library_layout" >
+        <action
+            android:id="@+id/action_libraryFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/songFragment"
+        android:name="com.example.riffrider.SongFragment"
+        android:label=""
+        tools:layout="@layout/song_layout" />
+
+    <fragment
+    android:id="@+id/filterFragment"
+    android:name="com.example.riffrider.FilterFragment"
+    android:label=""
+    tools:layout="@layout/filter_layout" />
+
+    <fragment
+        android:id="@+id/lessonsFragment"
+        android:name="com.example.riffrider.LessonsFragment"
+        android:label=""
+        tools:layout="@layout/lessons_layout" >
+        <action
+            android:id="@+id/action_lessonsFragment_to_activlessonFragment"
+            app:destination="@id/activlessonFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/activlessonFragment"
+        android:name="com.example.riffrider.ActivelessonFragment"
+        android:label=""
+        tools:layout="@layout/activlesson_layout" />
+    <fragment
+        android:id="@+id/recommendedsongsFragment"
+        android:name="com.example.riffrider.RecommendedsongsFragment"
+        android:label=""
+        tools:layout="@layout/recommendedsong_layout" >
+        <action
+            android:id="@+id/action_RecommendedsongsFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsongsFragment"
+        android:name="com.example.riffrider.NewsongsFragment"
+        android:label=""
+        tools:layout="@layout/newsongs_layout" >
+        <action
+            android:id="@+id/action_NewsongsFragment_to_songFragment"
+            app:destination="@id/songFragment" />
+    </fragment>
+
+</navigation>

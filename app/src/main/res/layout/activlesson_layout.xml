@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/MyFragmentStyle">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:progressTint="@color/bottom_navigation_background"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Какое из следующих утверждений верно?"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/option1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант 1"
+            android:buttonTint="@drawable/radio_button_selector"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/option2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант 2"
+            android:buttonTint="@drawable/radio_button_selector"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/option3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вариант 3"
+            android:buttonTint="@drawable/radio_button_selector"
+            android:textColor="@color/white"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжить"
+        android:background="@color/card_background"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

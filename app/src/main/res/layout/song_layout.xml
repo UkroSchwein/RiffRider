@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SongFragment"
+    android:theme="@style/MyFragmentStyle">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp">
+        <TextView
+            android:id="@+id/songTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:textColor="@color/white"/>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:background="@color/bottom_navigation_background"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/speedButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="1x"
+            android:textColor="@color/white"
+            android:background="@color/bottom_navigation_background"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:layout_marginLeft="32dp" />
+
+        <ImageView
+            android:id="@+id/scrollButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/free_icon_play_button_arrowhead_27223_1"
+            android:background="@color/bottom_navigation_background"
+            android:layout_marginHorizontal="88dp" />
+
+        <ImageView
+            android:id="@+id/moveButton"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:src="@drawable/free_icon_down_filled_triangular_arrow_57055_1"
+            android:background="@color/bottom_navigation_background"
+            android:layout_marginRight="32dp" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ChordMenu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="16dp"-->
+<!--        android:background="@color/bottom_navigation_background"-->
+<!--        android:gravity="center_horizontal">-->
+<!--    </LinearLayout>-->
+
+
+
+</RelativeLayout>

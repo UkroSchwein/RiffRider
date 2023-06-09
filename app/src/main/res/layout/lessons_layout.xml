@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="64dp"
+    tools:context=".LessonsFragment"
+    android:theme="@style/MyFragmentStyle">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+    <ImageView
+        android:id="@+id/opened_lesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/opened_lesson"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Основы теории"
+        android:textColor="@color/white"
+        android:textSize="24dp"/>
+
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/white_circles"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark_lesson"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Первая мелодия"
+        android:textColor="@color/dark_background"
+        android:textSize="24dp"/>
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark_point"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark_lesson"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Первая мелодия"
+        android:textColor="@color/dark_background"
+        android:textSize="24dp"/>
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark_point"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dark_lesson"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Первая мелодия"
+        android:textColor="@color/dark_background"
+        android:textSize="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

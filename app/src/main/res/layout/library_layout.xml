@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="64dp"
+    tools:context=".HomeFragment"
+    android:theme="@style/MyFragmentStyle">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/search_edittext_background"
+        android:layout_margin="16dp">
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:hint="Поиск"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/background"
+                android:layout_marginLeft="44dp"/>
+
+            <ImageView
+                android:id="@+id/iconStart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:id="@+id/filterButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/fi_rr_settings_sliders"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryFragment"
+    android:theme="@style/MyFragmentStyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:hint="Поиск"
+            android:background="@drawable/search_edittext_background"
+            android:padding="16dp"
+            android:imeOptions="actionSearch" />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                &lt;!&ndash; Карточка 1 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/white">
+
+                    &lt;!&ndash; Содержимое карточки 1 &ndash;&gt;
+
+                </LinearLayout>
+
+                &lt;!&ndash; Карточка 2 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/background">
+
+                    &lt;!&ndash; Содержимое карточки 2 &ndash;&gt;
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                &lt;!&ndash; Карточка 3 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/background">
+
+                    &lt;!&ndash; Содержимое карточки 3 &ndash;&gt;
+
+                </LinearLayout>
+
+                &lt;!&ndash; Карточка 4 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/background">
+
+                    &lt;!&ndash; Содержимое карточки 4 &ndash;&gt;
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                &lt;!&ndash; Карточка 5 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/background">
+
+                    &lt;!&ndash; Содержимое карточки 5 &ndash;&gt;
+
+                </LinearLayout>
+
+                &lt;!&ndash; Карточка 6 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/background">
+
+                    &lt;!&ndash; Содержимое карточки 6 &ndash;&gt;
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                &lt;!&ndash; Карточка 7 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/background">
+
+                    &lt;!&ndash; Содержимое карточки 7 &ndash;&gt;
+
+                </LinearLayout>
+
+                &lt;!&ndash; Карточка 8 &ndash;&gt;
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/background">
+
+                    &lt;!&ndash; Содержимое карточки 8 &ndash;&gt;
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>-->
